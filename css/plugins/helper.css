@@ -404,8 +404,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 [data-overlay-color]:before {
-  background-color: #1A237E;
-  background: linear-gradient(to bottom right, #1A237E , #2576FD);
+  background-color: #d65935;
+  background: linear-gradient(to bottom right, #d65935 , #f26d3d);
 
 }
 

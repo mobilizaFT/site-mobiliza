@@ -7,7 +7,7 @@
  Author URI: http://themeforest.net/user/ui-themez
  Version: 1.0
 
- Main Color   : #1A237E , #2576FD
+ Main Color   : #d65935 , #f26d3d
  main Font    : Rubik
 
 -----------------------------------------------------------------------------------*/
@@ -229,7 +229,7 @@ a:hover {
 
 .owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span {
-  background: #1A237E;
+  background: #d65935;
 }
 
 .cd-headline {
@@ -350,30 +350,30 @@ a:hover {
 }
 
 .butn-bg {
-  background: #1A237E;
-  border-color: #1A237E;
+  background: #d65935;
+  border-color: #d65935;
   color: #fff;
 }
 .butn-bg:hover span {
-  color: #1A237E;
+  color: #d65935;
 }
 
 .butn-light, .butn-bord {
   background: #fff;
 }
 .butn-light:after, .butn-bord:after {
-  background: #1A237E;
+  background: #d65935;
 }
 .butn-light:hover span, .butn-bord:hover span {
   color: #fff !important;
 }
 .butn-light span, .butn-bord span {
-  color: #1A237E;
+  color: #d65935;
 }
 
 .butn-bord {
   background: transparent !important;
-  border-color: #1A237E;
+  border-color: #d65935;
 }
 
 /* ----------------------------------------------------------------
@@ -405,7 +405,7 @@ a:hover {
   transition: all .5s;
 }
 .navbar .navbar-nav .active {
-  color: #2576FD !important;
+  color: #f26d3d !important;
 }
 
 .nav-scroll {
@@ -500,7 +500,7 @@ a:hover {
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  background: #1A237E;
+  background: #d65935;
   position: absolute;
   top: 10px;
   right: 0;
@@ -574,7 +574,7 @@ a:hover {
   margin-bottom: 30px;
 }
 .hero .extra-title span {
-  color: #1A237E;
+  color: #d65935;
 }
 .hero .feat-item {
   padding: 0;
@@ -618,9 +618,9 @@ a:hover {
   position: absolute;
   top: 0;
   right: 0;
-  background-color: #1A237E;
-  background: -webkit-gradient(linear, left top, right bottom, from(#2576FD), to(#1A237E));
-  background: linear-gradient(to bottom right, #2576FD, #1A237E);
+  background-color: #d65935;
+  background: -webkit-gradient(linear, left top, right bottom, from(#f26d3d), to(#d65935));
+  background: linear-gradient(to bottom right, #f26d3d, #d65935);
   border-radius: 50%;
   z-index: -1;
   -webkit-transform: scale(0, 0);
@@ -634,7 +634,7 @@ a:hover {
   margin-bottom: 10px;
 }
 .hero .feat-item h6 {
-  color: #1A237E;
+  color: #d65935;
   font-size: 12px;
   font-weight: 400;
   font-style: italic;
@@ -654,9 +654,9 @@ a:hover {
   z-index: 5;
 }
 .tabs-section .nav-pills .nav-link.active {
-  border-top-color: #1A237E;
+  border-top-color: #d65935;
   background-color: #fff;
-  color: #1A237E;
+  color: #d65935;
 }
 .tabs-section .tab-content .left {
   padding: 0;
@@ -691,14 +691,14 @@ a:hover {
 }
 .tabs-section .tab-content .left .feat li:hover {
   color: #fff;
-  background-color: #1A237E;
+  background-color: #d65935;
 }
 .tabs-section .tab-content .left .feat li:hover .icon {
   color: #eee;
 }
 .tabs-section .tab-content .left .feat .icon {
   font-size: 30px;
-  color: #1A237E;
+  color: #d65935;
   margin-bottom: 15px;
 }
 .tabs-section .tab-content .left .feat h6 {
@@ -727,7 +727,7 @@ a:hover {
   text-align: center;
   line-height: 1.5;
   font-size: 70px;
-  color: #1A237E;
+  color: #d65935;
   z-index: 3;
 }
 .tabs-section .tab-content .image .img .vid:hover:after {
@@ -779,9 +779,9 @@ a:hover {
   top: 0;
   left: 0;
   border-radius: 20px;
-  background-color: #1A237E;
-  background: -webkit-gradient(linear, left top, right bottom, from(#2576FD), to(#1A237E));
-  background: linear-gradient(to bottom right, #2576FD, #1A237E);
+  background-color: #d65935;
+  background: -webkit-gradient(linear, left top, right bottom, from(#f26d3d), to(#d65935));
+  background: linear-gradient(to bottom right, #f26d3d, #d65935);
   -webkit-transition: all 1.5s;
   transition: all 1.5s;
 }
@@ -829,7 +829,7 @@ a:hover {
   transition: all .3s;
 }
 .process .item .cont:hover {
-  background-color: #1A237E;
+  background-color: #d65935;
 }
 .process .item .cont:hover h6 {
   color: #fff;
@@ -838,7 +838,7 @@ a:hover {
   color: #eee;
 }
 .process .item .icon {
-  color: #2576FD;
+  color: #f26d3d;
   font-size: 30px;
   width: 80px;
   height: 80px;
@@ -890,9 +890,9 @@ a:hover {
   cursor: pointer;
 }
 .works .filtering .active {
-  background: #1A237E;
-  background: -webkit-gradient(linear, left top, right top, from(#1A237E), to(#2576FD));
-  background: linear-gradient(to right, #1A237E, #2576FD);
+  background: #d65935;
+  background: -webkit-gradient(linear, left top, right top, from(#d65935), to(#f26d3d));
+  background: linear-gradient(to right, #d65935, #f26d3d);
   -webkit-box-shadow: 0px 8px 30px -5px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 8px 30px -5px rgba(0, 0, 0, 0.2);
   color: #fff;
@@ -926,13 +926,13 @@ a:hover {
   height: 40px;
   line-height: 40px;
   border-radius: 50%;
-  border: 1px solid #1A237E;
+  border: 1px solid #d65935;
   text-align: center;
   font-size: 20px;
-  color: #1A237E;
+  color: #d65935;
 }
 .works .item-img-overlay p {
-  color: #1A237E;
+  color: #d65935;
   font-weight: 400;
   font-size: 13px;
 }
@@ -962,7 +962,7 @@ a:hover {
   font-size: 35px;
   border-radius: 50%;
   border: 1px solid #eee;
-  color: #2576FD;
+  color: #f26d3d;
   float: left;
   position: relative;
   -webkit-transition: all .3s;
@@ -982,9 +982,9 @@ a:hover {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background-color: #1A237E;
-  background: -webkit-gradient(linear, left top, right top, from(#1A237E), to(#2576FD));
-  background: linear-gradient(to right, #1A237E, #2576FD);
+  background-color: #d65935;
+  background: -webkit-gradient(linear, left top, right top, from(#d65935), to(#f26d3d));
+  background: linear-gradient(to right, #d65935, #f26d3d);
   position: absolute;
   top: 0;
   left: 0;
@@ -1033,9 +1033,9 @@ a:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #2576FD;
-  background: -webkit-gradient(linear, left top, left bottom, from(#1A237E), to(#2576FD));
-  background: linear-gradient(to bottom, #1A237E, #2576FD);
+  background-color: #f26d3d;
+  background: -webkit-gradient(linear, left top, left bottom, from(#d65935), to(#f26d3d));
+  background: linear-gradient(to bottom, #d65935, #f26d3d);
   opacity: 0;
   -webkit-transition: all .5s;
   transition: all .5s;
@@ -1163,16 +1163,16 @@ a:hover {
 .price .active {
   -webkit-box-shadow: 0px 20px 40px -10px rgba(0, 0, 0, 0.5);
           box-shadow: 0px 20px 40px -10px rgba(0, 0, 0, 0.5);
-  background-color: #1A237E;
-  background: -webkit-gradient(linear, left top, left bottom, from(#1A237E), to(#2576FD));
-  background: linear-gradient(to bottom, #1A237E, #2576FD);
+  background-color: #d65935;
+  background: -webkit-gradient(linear, left top, left bottom, from(#d65935), to(#f26d3d));
+  background: linear-gradient(to bottom, #d65935, #f26d3d);
   color: #fff;
 }
 .price .active .features li {
   color: #eee;
 }
 .price .active .butn span {
-  color: #1A237E;
+  color: #d65935;
 }
 .price .butn {
   padding: 10px 30px;
@@ -1224,7 +1224,7 @@ a:hover {
 }
 .blog .item .info .tag {
   padding: 4px;
-  background-color: #1A237E;
+  background-color: #d65935;
   color: #fff;
   float: right;
   line-height: 1;
@@ -1235,7 +1235,7 @@ a:hover {
   margin-top: 10px;
 }
 .blog .item .more:hover {
-  color: #1A237E;
+  color: #d65935;
 }
 .blog .item .more:hover i {
   opacity: 1;
@@ -1299,7 +1299,7 @@ a:hover {
 .contact .contact-info .item .icon {
   float: left;
   font-size: 25px;
-  color: #1A237E;
+  color: #d65935;
 }
 .contact .contact-info .item .cont {
   margin-left: 50px;
@@ -1344,7 +1344,7 @@ footer .social a {
   margin: 15px 5px;
 }
 footer .social a:hover {
-  background-color: #1A237E;
+  background-color: #d65935;
   color: #fff;
 }
 footer p {
@@ -1408,7 +1408,7 @@ footer p {
     color: #fff !important;
   }
   .nav-scroll .navbar-collapse .active {
-    color: #1A237E !important;
+    color: #d65935 !important;
   }
 
   .header {
