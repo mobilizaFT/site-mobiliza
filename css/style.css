@@ -31,7 +31,7 @@
 	14 Contact
 	15 Footer
 	16 Responsive
- 
+
 
 ---------------------------------------------------------------- */
 /* ----------------------------------------------------------------
@@ -396,6 +396,7 @@ a:hover {
   color: #fff;
 }
 .navbar .navbar-nav .nav-link {
+  cursor: pointer;
   font-size: 13px;
   font-weight: 500;
   color: #eee;
