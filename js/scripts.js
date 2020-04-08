@@ -61,9 +61,9 @@ $(function() {
     // progress bar
     wind.on('scroll', function () {
         $(".skill-progress .progres").each(function () {
-            var bottom_of_object = 
+            var bottom_of_object =
             $(this).offset().top + $(this).outerHeight();
-            var bottom_of_window = 
+            var bottom_of_window =
             $(window).scrollTop() + $(window).height();
             var myVal = $(this).attr('data-value');
             if(bottom_of_window > bottom_of_object) {
@@ -79,7 +79,7 @@ $(function() {
     // sections background image from data background
     var pageSection = $(".bg-img, section");
     pageSection.each(function(indx){
-        
+
         if ($(this).attr("data-background")){
             $(this).css("background-image", "url(" + $(this).data("background") + ")");
         }
@@ -208,7 +208,7 @@ $(window).on("load",function (){
 
             const alertMassage = 'Mensagem enviada com sucesso. Responderemos em breve!';
             var alertBox = '<div class="alert alert-success alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button> '+ alertMassage +' </div>';
-            
+
 
             $.ajax({
                 type: "POST",
@@ -222,10 +222,16 @@ $(window).on("load",function (){
         }
     });
 
+    // show list of links to classes
+    $('.disciplina').on('click', function() {
+      var e = document.getElementById('lista-aulas');
+      e.hidden = !e.hidden;
+    });
+
 });
 
 
-// Slider 
+// Slider
 $(document).ready(function() {
 
     var owl = $('.header .owl-carousel');

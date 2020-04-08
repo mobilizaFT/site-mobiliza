@@ -13,7 +13,7 @@
 */
 
 (function ( $ ) {
- 
+
     $.fn.YouTubePopUp = function(options) {
 
         var YouTubePopUpOptions = $.extend({
@@ -39,6 +39,11 @@
                 var split_n = 5;
             }
 
+            if( youtubeLink.match(/(twitch.tv)/) ){
+                var split_c = "/";
+                var split_n = 4;
+            }
+
             var getYouTubeVideoID = youtubeLink.split(split_c)[split_n];
 
             var cleanVideoID = getYouTubeVideoID.replace(/(&)+(.*)/, "");
@@ -49,6 +54,10 @@
 
             if( youtubeLink.match(/(vimeo.com\/)+[0-9]/) || youtubeLink.match(/(vimeo.com\/)+[a-zA-Z]/) ){
                 var videoEmbedLink = "https://player.vimeo.com/video/"+cleanVideoID+"?autoplay="+YouTubePopUpOptions.autoplay+"";
+            }
+
+            if( youtubeLink.match(/(twitch.tv)/) ){
+              var videoEmbedLink = "https://player.twitch.tv/?autoplay="+YouTubePopUpOptions.autoplay+"&video=v"+cleanVideoID+"";
             }
 
             $("body").append('<div class="YouTubePopUp-Wrap YouTubePopUp-animation"><div class="YouTubePopUp-Content"><span class="YouTubePopUp-Close"></span><iframe src="'+videoEmbedLink+'" allowfullscreen></iframe></div></div>');
@@ -76,5 +85,5 @@
         });
 
     };
- 
+
 }( jQuery ));
