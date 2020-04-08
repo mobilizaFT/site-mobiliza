@@ -204,24 +204,20 @@ $(window).on("load",function (){
 
     $('#contact-form').on('submit', function (e) {
         if (!e.isDefaultPrevented()) {
-            var url = "contact.php";
+            var url = "https://formspree.io/moqnwaap";
+
+            const alertMassage = 'Mensagem enviada com sucesso. Responderemos em breve!';
+            var alertBox = '<div class="alert alert-success alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button> '+ alertMassage +' </div>';
+            
 
             $.ajax({
                 type: "POST",
                 url: url,
-                data: $(this).serialize(),
-                success: function (data)
-                {
-                    var messageAlert = 'alert-' + data.type;
-                    var messageText = data.message;
-
-                    var alertBox = '<div class="alert ' + messageAlert + ' alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' + messageText + '</div>';
-                    if (messageAlert && messageText) {
-                        $('#contact-form').find('.messages').html(alertBox);
-                        $('#contact-form')[0].reset();
-                    }
-                }
+                data: $(this).serialize()
             });
+
+            $('#contact-form').find('.messages').html(alertBox);
+            $('#contact-form')[0].reset();
             return false;
         }
     });
