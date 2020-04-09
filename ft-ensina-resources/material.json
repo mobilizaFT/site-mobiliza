@@ -1,0 +1,16 @@
+videos = [
+  {
+    "disciplina": "Algoritmos e Programação de Computadores",
+    "titulo": "Live 1",
+    "link": "https://youtu.be/00cF3hNXdfI"
+  },
+  {
+    "titulo": "Live 2",
+    "link": "https://youtu.be/KgQZ0EufYU4"
+  },
+  {
+    "disciplina": "Computação para Engenharia",
+    "titulo": "Live 2",
+    "link": "https://www.twitch.tv/videos/581762698"
+  }
+]
