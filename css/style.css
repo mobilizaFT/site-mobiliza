@@ -592,6 +592,11 @@ a:hover {
 .hero .feat-item {
   padding: 0;
 }
+
+.hero .video-info:hover {
+  color: #f26d3d;
+}
+
 .hero .feat-item .text-center {
   padding: 50px 30px;
   background-color: #fff;

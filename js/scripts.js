@@ -224,8 +224,25 @@ $(window).on("load",function (){
 
     // show list of links to classes
     $('.disciplina').on('click', function() {
-      var e = document.getElementById('lista-aulas');
-      e.hidden = !e.hidden;
+      var id = ($(this).attr('id')).split('-')[1];
+      var size = $('.disciplina').length;
+
+      for(var i=1;i<=size;i++){
+          if(i !== id){
+            (document.getElementById('lista-aulas-'+i)).hidden = true;
+          }
+      }
+
+      (document.getElementById('lista-aulas-'+id)).hidden = false;
+
+    });
+
+    // changes video link on player
+    $('.video-info').on('click', function() {
+      var videoLink = $(this).attr('value');
+      (document.getElementById('videoaula-player')).href = videoLink;
+      (document.getElementById('videoaula-player')).hidden = false;
+      $('#videoaula-player').click();
     });
 
 });
