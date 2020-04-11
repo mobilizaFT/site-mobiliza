@@ -61,7 +61,7 @@ body.logged-in .YouTubePopUp-Wrap{ /* For WordPress */
 }
 
 .YouTubePopUp-Content{
-    max-width:480px;
+    max-width:680px;
     display:block;
     margin:0 auto;
     height:100%;
@@ -72,7 +72,7 @@ body.logged-in .YouTubePopUp-Wrap{ /* For WordPress */
     max-width:100% !important;
     width:100% !important;
     display:block !important;
-    height:280px !important;
+    height:480px !important;
     border:none !important;
     position:absolute;
     top: 0;
@@ -113,7 +113,7 @@ body.logged-in .YouTubePopUp-Wrap{ /* For WordPress */
     position:absolute;
     top:0;
     cursor:pointer;
-    bottom:328px;
+    bottom:528px;
     right:0px;
     margin:auto 0;
     width:24px;
