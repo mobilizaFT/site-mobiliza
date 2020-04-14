@@ -82,16 +82,16 @@
                 <div class="mission box-white">
                   <h5 class="title">Videoaulas</h5>
                   <ul class="feat mt-30 row" id="disciplinas">
-                  {% for nome, numero in DISCIPLINAS %}
+                  {% for numero, nome in DISCIPLINAS %}
                     <li class="disciplina col-sm-4" id="disciplina-{{ numero }}">
                       <span class="icon icon-basic-display"></span>
                       <h6>{{ nome }}</h6>
                     </li>
                   {% endfor %}
                   </ul>
-                  {% for nome, numero in DISCIPLINAS %}
+                  {% for numero, nome in DISCIPLINAS %}
                   <ul id="lista-aulas-{{ numero }}" class="list-group" hidden="true">
-                    {% for matter_number, videolink, title, subject in VIDEOS %}
+                    {% for matter_number, title, subject, videolink in VIDEOS %}
                     {% if matter_number == numero %}
                     <li class="video-info list-group-item" value="{{ videolink }}">
                       {{ title }} - {{ subject }}

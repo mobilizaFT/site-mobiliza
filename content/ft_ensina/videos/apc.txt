@@ -1,9 +1,0 @@
-disciplina> Algoritmos e Programação de Computadores
-****
-titulo> Live 1
-assunto>
-link> https://youtu.be/00cF3hNXdfI
-****
-titulo> Live 2
-assunto>
-link> https://youtu.be/KgQZ0EufYU4
