@@ -82,21 +82,22 @@
                 <div class="mission box-white">
                   <h5 class="title">Videoaulas</h5>
                   <ul class="feat mt-30 row" id="disciplinas">
-                  {% for numero, nome in DISCIPLINAS %}
-                    <li class="disciplina col-sm-4" id="disciplina-{{ numero }}">
+                  {% for item in FT_ENSINA_CONTENT %}
+                    <!-- <p>{{ item }}</p> -->
+                    <li class="disciplina col-sm-4" id="disciplina-{{ item.numero }}">
                       <span class="icon icon-basic-display"></span>
-                      <h6>{{ nome }}</h6>
+                      <h6>{{ item.disciplina }}</h6>
                     </li>
                   {% endfor %}
                   </ul>
-                  {% for numero, nome in DISCIPLINAS %}
-                  <ul id="lista-aulas-{{ numero }}" class="list-group" hidden="true">
-                    {% for matter_number, title, subject, videolink in VIDEOS %}
-                    {% if matter_number == numero %}
-                    <li class="video-info list-group-item" value="{{ videolink }}">
-                      {{ title }} - {{ subject }}
+                  {% for item in FT_ENSINA_CONTENT %}
+                  <ul id="lista-aulas-{{ item.numero }}" class="list-group" hidden="true">
+                    {% for titulo in item.titulos %}
+                    <!-- {% if matter_number == numero %} -->
+                    <li class="video-info list-group-item" value="{{ item.links[loop.index-1] }}">
+                      {{ titulo }} - {{ item.assuntos[loop.index-1] }}
                     </li>
-                    {% endif %}
+                    <!-- {% endif %} -->
                     {% endfor %}
                   </ul>
                   {% endfor %}
