@@ -71,4 +71,4 @@ Instagram | Nome
 
 <a href="http://www.laboratorioaberto.com.br/producao-vida-2020/"> Produção Vida 2020 do Laboratório Aberto de Brasília</a>
 
-<p align="right"><a href="https://github.com/IEEEComputerSocietyUNB">IEEE Computer Society UnB</a><br> Equipe Desenvolvedora </p>
+<p align="right"><a href="https://github.com/IEEEComputerSocietyUNB" target="_blank">IEEE Computer Society UnB</a><br> <em>Equipe Desenvolvedora</em> </p>
