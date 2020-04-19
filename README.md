@@ -70,3 +70,5 @@ Instagram | Nome
 <a href="https://docs.google.com/document/d/1FtzCi0b99QDL-CNHa_JAtD_KFNBIH3YCd6VNJ0Qeu_Q"> Edital Mobiliza FT </a>
 
 <a href="http://www.laboratorioaberto.com.br/producao-vida-2020/"> Produção Vida 2020 do Laboratório Aberto de Brasília</a>
+
+<p><a href="https://github.com/IEEEComputerSocietyUNB">IEEE Computer Society UnB</a><br>Equipe Desenvolvedora</p>
