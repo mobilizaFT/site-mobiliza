@@ -13,18 +13,16 @@ def generate_main_pages():
 		for page in os.listdir(f'template/{folder}'):
 			template = env.get_template(f'{folder}/{page}')
 			index_html = template.render(configs)
-			with open(f'output/{page}', 'w') as file:
+			with open(f'{page}', 'w') as file:
 				file.write(index_html)
 
 def generate_static():
 	try:
-		shutil.rmtree('output/static')
+		shutil.rmtree('static')
 	except Exception as e:
-		logging.info('output directory created')
-	shutil.copytree('template/static', 'output/static')
+		logging.info('static directory created')
+	shutil.copytree('template/static', 'static')
 
 if __name__ == '__main__':
-	if 'output' not in os.listdir('.'):
-		os.mkdir('output')
 	generate_main_pages()
 	generate_static()
