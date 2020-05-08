@@ -78,41 +78,44 @@
 
           <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="pills-home-tab">
             <div class="row">
-              <div class="left col-lg-6">
+              <div class="left col-lg-12">
                 <div class="mission box-white">
                   <h5 class="title">Videoaulas</h5>
                   <ul class="feat mt-30 row" id="disciplinas">
                     {% for item in FT_ENSINA_CONTENT %}
                     <!-- <p>{{ item }}</p> -->
                     <li class="disciplina col-sm-4" id="disciplina-{{ item.numero }}">
-                      <span class="icon icon-basic-display"></span>
+                      <!-- <span class="icon icon-basic-display"></span> -->
+                      <span class="icon icon-basic-book-pencil"></span>
                       <h6>{{ item.disciplina }}</h6>
                     </li>
                     {% endfor %}
                   </ul>
-                  {% for item in FT_ENSINA_CONTENT %}
-                  <ul id="lista-aulas-{{ item.numero }}" class="list-group" hidden="true">
-                    {% for titulo in item.titulos %}
-                    <!-- {% if matter_number == numero %} -->
-                    <li class="video-info list-group-item" value="{{ item.links[loop.index-1] }}">
-                      {{ titulo }} - {{ item.assuntos[loop.index-1] }}
-                    </li>
-                    <!-- {% endif %} -->
+                  <div class="scroll-ref">
+                    {% for item in FT_ENSINA_CONTENT %}
+                    <ul id="lista-aulas-{{ item.numero }}" class="list-group" hidden="true">
+                      {% for titulo in item.titulos %}
+                      <!-- {% if matter_number == numero %} -->
+                      <li class="video-info list-group-item" value="{{ item.links[loop.index-1] }}">
+                        {{ titulo }} - {{ item.assuntos[loop.index-1] }}
+                      </li>
+                      <!-- {% endif %} -->
+                      {% endfor %}
+                    </ul>
                     {% endfor %}
-                  </ul>
-                  {% endfor %}
+                  </div>
                 </div>
               </div>
-              <div class="col-lg-6 image">
+              <!-- <div class="col-lg-6 image">
                 <div class="img">
-                  <img src="{{ IMG_DIR }}3.jpg" alt="">
+                  <img src="{{ IMG_DIR }}3.jpg" alt=""> -->
                   <a class="vid" id="videoaula-player" href="" hidden="true">
-                    <span class="vid-butn">
+                    <!-- <span class="vid-butn">
                       <i class="fas fa-play-circle"></i>
-                    </span>
+                    </span> -->
                   </a>
-                </div>
-              </div>
+                <!-- </div>
+              </div> -->
             </div>
           </div>
 

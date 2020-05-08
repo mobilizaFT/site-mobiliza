@@ -227,13 +227,21 @@ $(window).on("load",function (){
       var id = ($(this).attr('id')).split('-')[1];
       var size = $('.disciplina').length;
 
-      for(var i=1;i<=size;i++){
-          if(i !== id){
-            (document.getElementById('lista-aulas-'+i)).hidden = true;
-          }
+      if(!document.getElementById('lista-aulas-'+id).hidden){
+        (document.getElementById('lista-aulas-'+id)).hidden = true;
+      }else{
+        for(var i=1;i<=size;i++){
+            if(i !== id){
+              (document.getElementById('lista-aulas-'+i)).hidden = true;
+            }
+        }
+
+        (document.getElementById('lista-aulas-'+id)).hidden = false;
       }
 
-      (document.getElementById('lista-aulas-'+id)).hidden = false;
+      $('html, body'+id).animate({
+        scrollTop: $('.scroll-ref').offset().top - 500
+      });
 
     });
 
@@ -241,7 +249,7 @@ $(window).on("load",function (){
     $('.video-info').on('click', function() {
       var videoLink = $(this).attr('value');
       (document.getElementById('videoaula-player')).href = videoLink;
-      (document.getElementById('videoaula-player')).hidden = false;
+      // (document.getElementById('videoaula-player')).hidden = false;
       $('#videoaula-player').click();
     });
 
