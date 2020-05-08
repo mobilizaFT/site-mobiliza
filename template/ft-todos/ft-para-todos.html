@@ -129,65 +129,29 @@
         <h4><span></span> Últimos Conteúdos</h4>
         <p> Veja os últimos conteúdos que separamos para você.</p>
       </div>
-      <div class="col-lg-4">
-        <div class="item mb-md50">
-          <div class="post-img">
-            <div class="img">
-              <img src="{{ IMG_DIR }}blog/1.jpg" alt="">
-            </div>
-          </div>
-          <div class="cont">
-            <div class="info">
-              <a href="#0">By : Admin</a>
-              <a href="#0">06 Aug 2017</a>
-              <a href="#0" class="tag">WordPress</a>
-            </div>
-            <h6><a href="#0">48 Best WordPress Themes</a></h6>
-            <p>Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has been the dummy text ever</p>
-            <a href="#0" class="more">Read More <i class="fas fa-chevron-right"></i></a>
-          </div>
-        </div>
-      </div>
 
-      <div class="col-lg-4">
-        <div class="item mb-md50">
-          <div class="post-img">
-            <div class="img">
-              <img src="{{ IMG_DIR }}blog/2.jpg" alt="">
+      {% for item in FT_PARA_TODOS_CONTENT %}
+        {% for author in item.authors %}
+        <div class="col-lg-4">
+          <div class="item mb-md50">
+            <div class="post-img">
+              <div class="img">
+                <img src="{{ IMG_DIR }}blog/1.jpg" alt="">
+              </div>
             </div>
-          </div>
-          <div class="cont">
-            <div class="info">
-              <a href="#0">By : Admin</a>
-              <a href="#0">06 Aug 2017</a>
-              <a href="#0" class="tag">WordPress</a>
+            <div class="cont">
+              <div class="info">
+                <a href="#">Por: {{ author }}</a>
+                <a href="">{{ item.dates[loop.index-1] }}</a>
+              </div>
+              <h6>{{ item.titles[loop.index-1] }}</h6>
+              <p>{{ item.briefings[loop.index-1] }}</p>
+              <a href="{{ item.links[loop.index-1] }}" target="_blank" class="more">{{ item.actions[loop.index-1] }} <i class="fas fa-chevron-right"></i></a>
             </div>
-            <h6><a href="#0">48 Best WordPress Themes</a></h6>
-            <p>Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has been the dummy text ever</p>
-            <a href="#0" class="more">Read More <i class="fas fa-chevron-right"></i></a>
           </div>
         </div>
-      </div>
-
-      <div class="col-lg-4">
-        <div class="item">
-          <div class="post-img">
-            <div class="img">
-              <img src="{{ IMG_DIR }}blog/3.jpg" alt="">
-            </div>
-          </div>
-          <div class="cont">
-            <div class="info">
-              <a href="#0">By : Admin</a>
-              <a href="#0">06 Aug 2017</a>
-              <a href="#0" class="tag">WordPress</a>
-            </div>
-            <h6><a href="#0">48 Best WordPress Themes</a></h6>
-            <p>Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has been the dummy text ever</p>
-            <a href="#0" class="more">Read More <i class="fas fa-chevron-right"></i></a>
-          </div>
-        </div>
-      </div>
+        {% endfor %}
+      {% endfor %}
 
     </div>
   </div>
