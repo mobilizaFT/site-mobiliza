@@ -41,7 +41,7 @@ Então, se eu quiséssemos adicionar a live 2 do curso de CPE, por exemplo, noss
 #### 
 ###### (link da live 2)
 ```
-Novamente clicamos em "Commit changes" e esperamos a aprovação de outro colega.
+Clique em "Commit changes", e espere a aprovação de outro colega.
 
 ## Postagens no FT para Todos
 O FT para Todos tem uma estrutura mais simples que a do FT Ensina, para publicarmos devemos ir em: **ft_para_todos > blog**.
@@ -55,4 +55,4 @@ Todas as alterações são feitas no arquivo **posts.md**, clique nele e siga o 
 ##### link
 ###### Assistir (botão escrito "Assistir")
 ```
-Depois clique em "Commit changes" e espere pela aprovação.
+Depois clique em "Commit changes", faça os procedimentos elucidados anteriormente e espere a aprovação.
