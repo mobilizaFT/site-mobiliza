@@ -6,14 +6,23 @@ Para gerenciar as postanges do FT Ensina precisamos seguir esse caminho: **ft_en
 
 Cada arquivo do tipo .md representa um curso em andamento, por exemplo: APC, CPE e PCALC.
 
-Para **adicionar um novo curso** basta clicar em "Create new file" e seguir o modelo:
+1. Para **adicionar um novo curso** basta clicar em "Create new file".
+2. Dê um nome para o arquivo (não se esqueça de escrever o .md no final).
+3. Escreva o seguinte modelo:
 ```
 # Nome do Curso
 ## Live 1
 #### 
 ###### (link da live)
 ```
-Clique em "Commit changes" e espere a aprovação de outro colega. É importante lembrar que, por precisar de aprovação, _nenhuma alteração é feita imediatamente no site_.
+
+![imagem1](https://user-images.githubusercontent.com/54515091/81501244-bd3b5080-92ad-11ea-9a4a-c85aa98b55de.png)
+
+4. Clique em "Commit changes" e siga:
+
+![imagem2](https://user-images.githubusercontent.com/54515091/81501253-c62c2200-92ad-11ea-8c3b-182f46f52fc8.png)
+
+Agora, espere a aprovação de outro colega. É importante lembrar que, por precisar de aprovação, _nenhuma alteração é feita imediatamente no site_.
 
 Para **alterar os cursos** (adicionar live 2, live 3, etc) basta clicar no curso que quer alterar, quebrar algumas linhas e usar o seguinte modelo:
 ```
