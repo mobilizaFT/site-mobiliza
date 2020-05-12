@@ -12,11 +12,14 @@ Cada arquivo do tipo .md representa um curso em andamento, por exemplo: APC, CPE
 ```
 # Nome do Curso
 ## Live 1
-#### 
+#### Descrição
 ###### (link da live)
 ```
 
 ![imagem1](https://user-images.githubusercontent.com/54515091/81501244-bd3b5080-92ad-11ea-9a4a-c85aa98b55de.png)
+
+_Observação:_ O "####" é a descrição da Live, caso não tenha uma descrição
+deixe apenas o "####".
 
 4. Clique em "Commit changes" e siga:
 
@@ -27,7 +30,7 @@ Agora, espere a aprovação de outro colega. É importante lembrar que, por prec
 Para **alterar os cursos** (adicionar live 2, live 3, etc) basta clicar no curso que quer alterar, quebrar algumas linhas e usar o seguinte modelo:
 ```
 ## Live 2
-#### 
+#### Descrição
 ###### (link da live 2)
 ```
 Então, se eu quiséssemos adicionar a live 2 do curso de CPE, por exemplo, nosso arquivo cpe.md ficaria da seguinte maneira:
