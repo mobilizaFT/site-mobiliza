@@ -1,17 +1,23 @@
-{% extends "base.html" %}
-{% block content %}
+{% extends "base.html" %} {% block content %}
 <!-- =====================================
 ==== Start Navbar -->
 
 <nav class="navbar navbar-expand-lg">
   <div class="container">
-
     <!-- Logo -->
     <a class="logo" href="index.html">
-      <img src="{{ IMG_DIR }}logo-light.png" alt="logo">
+      <img src="{{ IMG_DIR }}logo-light.png" alt="logo" />
     </a>
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
       <span class="icon-bar"><i class="fas fa-bars"></i></span>
     </button>
 
@@ -22,7 +28,11 @@
           <a class="nav-link active" href="index.html">Home</a>
         </li>
         <li class="nav-item dropdown">
-          <div class="nav-link dropdown-toggle" data-toggle="dropdown" id="navbarDropdown">
+          <div
+            class="nav-link dropdown-toggle"
+            data-toggle="dropdown"
+            id="navbarDropdown"
+          >
             Nossas Frentes
           </div>
           <!-- <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
@@ -31,7 +41,9 @@
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="ft-ensina.html">FT Ensina</a>
             <a class="dropdown-item" href="ft-para-todos.html">FT para Todos</a>
-            <a class="dropdown-item" href="ft-contra-conronavirus.html">FT contra o Coronavírus</a>
+            <a class="dropdown-item" href="ft-contra-conronavirus.html"
+              >FT contra o Coronavírus</a
+            >
           </div>
         </li>
         <!-- <li class="nav-item">
@@ -57,11 +69,15 @@
 <!-- End Navbar ====
 ======================================= -->
 
-
 <!-- =====================================
 ==== Start Header -->
 
-<header class="header slider bg-img bg-fixed" data-scroll-index="0" data-overlay-dark="7" data-background="{{ IMG_DIR }}tijolinhos.png">
+<header
+  class="header slider bg-img bg-fixed"
+  data-scroll-index="0"
+  data-overlay-dark="7"
+  data-background="{{ IMG_DIR }}tijolinhos.png"
+>
   <div class="container-fluid">
     <div class="owl-carousel owl-theme">
       <div class="item">
@@ -70,8 +86,11 @@
           <h1>FT para Todos</h1>
           <div class="row">
             <div class="offset-md-1 col-md-10 offset-lg-2 col-lg-8">
-              <p>A frente FT para Todos tem como objetivo divulgar fontes confiáveis de informação sobre o coronavírus e
-                promover reflexões críticas sobre o momento que estamos vivendo. </p>
+              <p>
+                A frente FT para Todos tem como objetivo divulgar fontes
+                confiáveis de informação sobre o coronavírus e promover
+                reflexões críticas sobre o momento que estamos vivendo.
+              </p>
             </div>
           </div>
           <a href="#content" class="butn butn-light mt-30">
@@ -85,8 +104,11 @@
           <h1>FT para Todos</h1>
           <div class="row">
             <div class="offset-md-1 col-md-10 offset-lg-2 col-lg-8">
-              <p>A frente FT para Todos tem como objetivo divulgar fontes confiáveis de informação sobre o coronavírus e
-                promover reflexões críticas sobre o momento que estamos vivendo.</p>
+              <p>
+                A frente FT para Todos tem como objetivo divulgar fontes
+                confiáveis de informação sobre o coronavírus e promover
+                reflexões críticas sobre o momento que estamos vivendo.
+              </p>
             </div>
           </div>
           <a href="#content" class="butn butn-light mt-30">
@@ -100,8 +122,11 @@
           <h1>FT para Todos</h1>
           <div class="row">
             <div class="offset-md-1 col-md-10 offset-lg-2 col-lg-8">
-              <p>A frente FT para Todos tem como objetivo divulgar fontes confiáveis de informação sobre o coronavírus e
-                promover reflexões críticas sobre o momento que estamos vivendo.</p>
+              <p>
+                A frente FT para Todos tem como objetivo divulgar fontes
+                confiáveis de informação sobre o coronavírus e promover
+                reflexões críticas sobre o momento que estamos vivendo.
+              </p>
             </div>
           </div>
           <a href="#content" class="butn butn-light mt-30">
@@ -116,43 +141,38 @@
 <!-- End Header ====
 ======================================= -->
 
-
-
 <!-- =====================================
   ==== Start Blog -->
 
 <section class="blog section-padding" data-scroll-index="5" id="content">
   <div class="container">
     <div class="row">
-
       <div class="section-head offset-md-2 col-md-8 offset-lg-3 col-lg-6">
         <h4><span></span> Últimos Conteúdos</h4>
-        <p> Veja os últimos conteúdos que separamos para você.</p>
+        <p>Veja os últimos conteúdos que separamos para você.</p>
       </div>
 
-      {% for item in FT_PARA_TODOS_CONTENT %}
-        {% for author in item.authors %}
-        <div class="col-lg-4">
-          <div class="item mb-md50">
-            <div class="post-img">
-              <div class="img">
-                <img src="{{ IMG_DIR }}blog/1.jpg" alt="">
-              </div>
+      {% for item in FT_PARA_TODOS_CONTENT %} {% for author in item.authors %}
+      <div class="col-lg-4">
+        <div class="item mb-md50">
+          <div class="cont">
+            <div class="info">
+              <a href="#">Por: {{ author }}</a>
+              <a href="">{{ item.dates[loop.index-1] }}</a>
             </div>
-            <div class="cont">
-              <div class="info">
-                <a href="#">Por: {{ author }}</a>
-                <a href="">{{ item.dates[loop.index-1] }}</a>
-              </div>
-              <h6>{{ item.titles[loop.index-1] }}</h6>
-              <p>{{ item.briefings[loop.index-1] }}</p>
-              <a href="{{ item.links[loop.index-1] }}" target="_blank" class="more">{{ item.actions[loop.index-1] }} <i class="fas fa-chevron-right"></i></a>
-            </div>
+            <h6>{{ item.titles[loop.index-1] }}</h6>
+            <p>{{ item.briefings[loop.index-1] }}</p>
+            <a
+              href="{{ item.links[loop.index-1] }}"
+              target="_blank"
+              class="more"
+              >{{ item.actions[loop.index-1] }}
+              <i class="fas fa-chevron-right"></i
+            ></a>
           </div>
         </div>
-        {% endfor %}
-      {% endfor %}
-
+      </div>
+      {% endfor %} {% endfor %}
     </div>
   </div>
 </section>
@@ -163,10 +183,13 @@
 <!-- =====================================
   ==== Start Call-Action -->
 
-<section class="call-action section-padding bg-img bg-fixed" data-overlay-dark="5" data-background="{{ IMG_DIR }}ft-para-todos/ft-2.jpg">
+<section
+  class="call-action section-padding bg-img bg-fixed"
+  data-overlay-dark="5"
+  data-background="{{ IMG_DIR }}ft-para-todos/ft-2.jpg"
+>
   <div class="container">
     <div class="row">
-
       <div class="col-lg-12">
         <div class="text-center">
           <h2>Tem alguma ideia que gostaria de compartilhar?</h2>
@@ -176,7 +199,6 @@
           </a>
         </div>
       </div>
-
     </div>
   </div>
 </section>
