@@ -1,18 +1,23 @@
-{% extends "base.html" %}
-{% block content %}
+{% extends "base.html" %} {% block content %}
 <!-- =====================================
 ==== Start Navbar -->
 
 <nav class="navbar navbar-expand-lg">
   <div class="container">
-
     <!-- Logo -->
     <a class="logo" href="index.html">
-      <img src="{{ IMG_DIR }}logo-light.png" alt="logo">
+      <img src="{{ IMG_DIR }}logo-light.png" alt="logo" />
     </a>
 
-
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
       <span class="icon-bar"><i class="fas fa-bars"></i></span>
     </button>
 
@@ -23,30 +28,24 @@
           <a class="nav-link active" href="index.html">Home</a>
         </li>
         <li class="nav-item dropdown">
-          <div class="nav-link dropdown-toggle" data-toggle="dropdown" id="navbarDropdown">
+          <div
+            class="nav-link dropdown-toggle"
+            data-toggle="dropdown"
+            id="navbarDropdown"
+          >
             Nossas Frentes
           </div>
-          <!-- <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
-                Nossas Frentes
-              </a> -->
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="ft-ensina.html">FT Ensina</a>
             <a class="dropdown-item" href="ft-para-todos.html">FT para Todos</a>
-            <a class="dropdown-item" href="ft-contra-conronavirus.html">FT contra o Coronavírus</a>
+            <a class="dropdown-item" href="ft-contra-conronavirus.html"
+              >FT contra o Coronavírus</a
+            >
           </div>
         </li>
-        <!-- <li class="nav-item">
-        <a class="nav-link" href="#" data-scroll-nav="2">Portfolio</a>
-      </li> -->
         <li class="nav-item">
           <a class="nav-link" href="#" data-scroll-nav="3">Quem Somos</a>
         </li>
-        <!-- <li class="nav-item">
-        <a class="nav-link" href="#" data-scroll-nav="4">Price</a>
-      </li> -->
-        <!-- <li class="nav-item">
-        <a class="nav-link" href="#" data-scroll-nav="5">Blog</a>
-      </li> -->
         <li class="nav-item">
           <a class="nav-link" href="index.html#contact">Contato</a>
         </li>
@@ -58,12 +57,16 @@
 <!-- End Navbar ====
 ======================================= -->
 
-
 <!-- =====================================
 ==== Start Header -->
 
-<header class="header valign bg-img" data-scroll-index="0" data-overlay-dark="7" data-background="{{ IMG_DIR }}tijolinhos.png" data-stellar-background-ratio="0.5">
-
+<header
+  class="header valign bg-img"
+  data-scroll-index="0"
+  data-overlay-dark="7"
+  data-background="{{ IMG_DIR }}tijolinhos.png"
+  data-stellar-background-ratio="0.5"
+>
   <!-- particles -->
   <div id="particles-js"></div>
 
@@ -80,7 +83,11 @@
       </h1>
       <div class="row">
         <div class="offset-md-1 col-md-10 offset-lg-2 col-lg-8">
-          <p>A frente FT contra o Coronavírus tem como objetivo divulgar e apoiar os projetos desenvolvidos pela UnB em prol da luta contra a Covid-19.</p>
+          <p>
+            A frente FT contra o Coronavírus tem como objetivo divulgar e apoiar
+            os projetos desenvolvidos pela UnB em prol da luta contra a
+            Covid-19.
+          </p>
         </div>
       </div>
       <a href="#0" class="butn butn-light mt-30">
@@ -95,8 +102,6 @@
 <!-- End Header ====
 ======================================= -->
 
-
-
 <!-- =====================================
   ==== Start Information -->
 
@@ -104,7 +109,9 @@
   <div class="section-padding pos-re">
     <div class="container">
       <div class="row">
-        <div class="offset-lg-2 col-lg-8 offset-md-1 col-md-10 text-center mb-80">
+        <div
+          class="offset-lg-2 col-lg-8 offset-md-1 col-md-10 text-center mb-80"
+        >
           <h4 class="extra-title">Informação <span>Segura</span> Ajuda</h4>
           <p>
             Durante a pandemia nossa melhor arma é a informação!
@@ -113,7 +120,7 @@
 
         <div class="col-lg-5 image">
           <div class="img">
-            <img src="{{ IMG_DIR }}medical_research.svg" alt="">
+            <img src="{{ IMG_DIR }}medical_research.svg" alt="" />
           </div>
         </div>
 
@@ -123,21 +130,33 @@
             <h5>Coronavírus</h5>
             <h6>Conheça o problema</h6>
             <p style="text-align: justify;">
-              Coronavírus (CID10) é uma família de vírus que causam infecções respiratórias. O novo agente do coronavírus foi descoberto em 31/12/19 após casos registrados na China. Provoca a doença chamada COVID-19. Como nunca tivemos contato com o
-              vírus antes, <span style="color: #d65935;">não temos imunidade</span>. Ela causa uma infecção pulmonar. Nos casos mais leves, porém, parece um resfriado comum ou uma gripe leve.
+              Coronavírus (CID10) é uma família de vírus que causam infecções
+              respiratórias. O novo agente do coronavírus foi descoberto em
+              31/12/19 após casos registrados na China. Provoca a doença chamada
+              COVID-19. Como nunca tivemos contato com o vírus antes,
+              <span style="color: #d65935;">não temos imunidade</span>. Ela
+              causa uma infecção pulmonar. Nos casos mais leves, porém, parece
+              um resfriado comum ou uma gripe leve.
             </p>
             <p style="text-align: justify;">
-              O <span style="color: #d65935;">período de incubação</span>, tempo que leva para os primeiros sintomas aparecerem desde a infecção por coronavírus, pode ser de 2 a 14 dias.
+              O <span style="color: #d65935;">período de incubação</span>, tempo
+              que leva para os primeiros sintomas aparecerem desde a infecção
+              por coronavírus, pode ser de 2 a 14 dias.
             </p>
             <p style="text-align: justify;">
-              A <span style="color: #d65935;">transmissão</span> acontece de uma pessoa doente para outra ou por contato próximo por meio de toque do aperto de mão, gotículas de saliva, espirro, tosse, objetos ou superfícies contaminadas.
+              A <span style="color: #d65935;">transmissão</span> acontece de uma
+              pessoa doente para outra ou por contato próximo por meio de toque
+              do aperto de mão, gotículas de saliva, espirro, tosse, objetos ou
+              superfícies contaminadas.
             </p>
             <p style="text-align: right; font-style: italic;">
-              Fonte: <a href="https://coronavirus.saude.gov.br/sobre-a-doenca">Ministério da Saúde</a>.
+              Fonte:
+              <a href="https://coronavirus.saude.gov.br/sobre-a-doenca"
+                >Ministério da Saúde</a
+              >.
             </p>
           </div>
         </div>
-
       </div>
     </div>
 
@@ -159,7 +178,7 @@
       <div class="row">
         <div class="col-lg-5 image">
           <div class="content pt-10">
-            <img src="{{ IMG_DIR }}social_distancing.svg" alt="">
+            <img src="{{ IMG_DIR }}social_distancing.svg" alt="" />
           </div>
         </div>
 
@@ -171,16 +190,19 @@
               <div class="cont">
                 <h5>Cuide da sua higiene</h5>
                 <p>
-                  Lave com frequência as mãos até a altura dos punhos, com água e sabão ou então higienize com álcool em gel 70%.
+                  Lave com frequência as mãos até a altura dos punhos, com água
+                  e sabão ou então higienize com álcool em gel 70%.
                 </p>
                 <p>
                   Evite tocar olhos, nariz e boca com as mãos não lavadas.
                 </p>
                 <p>
-                  Ao tossir ou espirrar, cubra nariz e boca com lenço ou com o braço, e não com as mãos.
+                  Ao tossir ou espirrar, cubra nariz e boca com lenço ou com o
+                  braço, e não com as mãos.
                 </p>
                 <p>
-                  Higienize com frequência objetos como o celular e os brinquedos das crianças.
+                  Higienize com frequência objetos como o celular e os
+                  brinquedos das crianças.
                 </p>
               </div>
             </div>
@@ -196,7 +218,8 @@
                 <p>3. Dificuldade para respirar</p>
                 <p>4. Entre outros sintomas gripais</p>
                 <p>
-                  Se aparecerem os sintomas ligue para 136 ou procure um posto de saúde.
+                  Se aparecerem os sintomas ligue para 136 ou procure um posto
+                  de saúde.
                 </p>
               </div>
             </div>
@@ -205,20 +228,22 @@
               <div class="cont">
                 <h5>Fique em casa</h5>
                 <p>
-                  O Ministério da Saúde sugere uma distância mínima de 2 metros de qualquer pessoa tossindo ou espirrando.
-                  Evite abraços, beijos e apertos de mãos.
+                  O Ministério da Saúde sugere uma distância mínima de 2 metros
+                  de qualquer pessoa tossindo ou espirrando. Evite abraços,
+                  beijos e apertos de mãos.
                 </p>
                 <p>
-                  Evite aglomerações e mantenha os ambientes da sua casa limpos e bem ventilados.
+                  Evite aglomerações e mantenha os ambientes da sua casa limpos
+                  e bem ventilados.
                 </p>
                 <p>
-                  Durma bem, tenha uma alimentação saudável e faça atividade física
+                  Durma bem, tenha uma alimentação saudável e faça atividade
+                  física
                 </p>
               </div>
             </div>
           </div>
         </div>
-
       </div>
     </div>
   </div>
@@ -231,55 +256,97 @@
   <div class="tabs-section section-padding">
     <div class="container">
       <div class="row">
-
         <ul class="col-md-12 nav nav-pills tabs" id="pills-tab" role="tablist">
           <li class="nav-item one active">
-            <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">Produção de Face Shield</a>
+            <a
+              class="nav-link active"
+              id="pills-home-tab"
+              data-toggle="pill"
+              href="#tab1"
+              role="tab"
+              aria-controls="tab1"
+              aria-selected="true"
+              >Produção de Face Shield</a
+            >
           </li>
           <li class="nav-item two">
-            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false">FT Ensina</a>
+            <a
+              class="nav-link"
+              id="pills-profile-tab"
+              data-toggle="pill"
+              href="#tab2"
+              role="tab"
+              aria-controls="tab2"
+              aria-selected="false"
+              >FT Ensina</a
+            >
           </li>
         </ul>
 
         <div class="tab-content col-lg-12" id="pills-tabContent">
-          <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="pills-home-tab">
+          <div
+            class="tab-pane fade show active"
+            id="tab1"
+            role="tabpanel"
+            aria-labelledby="pills-home-tab"
+          >
             <div class="row">
               <div class="left col-lg-6">
                 <div class="mission box-white">
                   <h5 class="title">Produção de Face Shield</h5>
                   <h6 class="sub-title">Ajudando os profissionais de saúde</h6>
-                  <p class="mb-10">O Laboratório Aberto imprime protetores faciais em 3D conforme padrões da Agência Nacional de Vigilância Sanitária (Anvisa) para os profissionais de saúde do DF.</p>
-                  <p class="mb-10"><b>Parcerias:</b> Finatec e Casa Thomas Jefferson</p>
-                  <p class="mb-10"><b>Coordenadora:</b> Profa. Andréa Cristina dos Santos</p>
+                  <p class="mb-10">
+                    O Laboratório Aberto imprime protetores faciais em 3D
+                    conforme padrões da Agência Nacional de Vigilância Sanitária
+                    (Anvisa) para os profissionais de saúde do DF.
+                  </p>
+                  <p class="mb-10">
+                    <b>Parcerias:</b> Finatec e Casa Thomas Jefferson
+                  </p>
+                  <p class="mb-10">
+                    <b>Coordenadora:</b> Profa. Andréa Cristina dos Santos
+                  </p>
                   <p class="mb-10"><b>Contato:</b> lababertobsb@gmail.com</p>
                 </div>
               </div>
               <div class="col-lg-6 image actions">
                 <div class="img">
-                  <img src="{{ IMG_DIR }}doctos_heart.svg" alt="">
+                  <img src="{{ IMG_DIR }}doctos_heart.svg" alt="" />
                 </div>
               </div>
             </div>
           </div>
-          <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="pills-home-tab">
+          <div
+            class="tab-pane fade"
+            id="tab2"
+            role="tabpanel"
+            aria-labelledby="pills-home-tab"
+          >
             <div class="row">
               <div class="left col-lg-6">
                 <div class="mission box-white">
                   <h5 class="title">FT Ensina</h5>
                   <h6 class="sub-title">Apoio acadêmico</h6>
-                  <p class="mb-10">A frente FT ensina tem como objetivo promover o ensino acadêmico por meio de vídeo-aulas para alunos da FT e interessados.</p>
-                  <p>Disponibilizaremos aulas de disciplinas introdutórias comuns às Engenharias, como <b>Cálculo</b>, <b>Física</b> e <b>Programação</b>.</p>
+                  <p class="mb-10">
+                    A frente FT ensina tem como objetivo promover o ensino
+                    acadêmico por meio de vídeo-aulas para alunos da FT e
+                    interessados.
+                  </p>
+                  <p>
+                    Disponibilizaremos aulas de disciplinas introdutórias comuns
+                    às Engenharias, como <b>Cálculo</b>, <b>Física</b> e
+                    <b>Programação</b>.
+                  </p>
                 </div>
               </div>
               <div class="col-lg-6 image">
                 <div class="img">
-                  <img src="{{ IMG_DIR }}youtube_teacher.svg" alt="">
+                  <img src="{{ IMG_DIR }}youtube_teacher.svg" alt="" />
                 </div>
               </div>
             </div>
           </div>
         </div>
-
       </div>
     </div>
   </div>
@@ -291,10 +358,13 @@
 <!-- =====================================
   ==== Start Help Us -->
 
-<div class="process section-padding bg-img bg-fixed pos-re text-center" data-overlay-dark="7" data-background="{{ IMG_DIR }}tijolinhos.png">
+<div
+  class="process section-padding bg-img bg-fixed pos-re text-center"
+  data-overlay-dark="7"
+  data-background="{{ IMG_DIR }}tijolinhos.png"
+>
   <div class="container">
     <div class="row">
-
       <div class="section-head offset-md-2 col-md-8 offset-lg-3 col-lg-6">
         <h4>Você <span>Pode Ajudar</span></h4>
       </div>
@@ -315,7 +385,10 @@
           <div class="cont">
             <h3>02</h3>
             <h6>Mão de Obra</h6>
-            <p>Nossos projetos precisam de pessoas dispostas para auxiliarem na produção de cursos e face shields.</p>
+            <p>
+              Nossos projetos precisam de pessoas dispostas para auxiliarem na
+              produção de cursos e face shields.
+            </p>
           </div>
         </div>
       </div>
@@ -325,11 +398,13 @@
           <div class="cont">
             <h3>03</h3>
             <h6>Auxílio Financeiro</h6>
-            <p>Inevitavelmente existem custos no meio do processo, você pode nos ajudar nisso.</p>
+            <p>
+              Inevitavelmente existem custos no meio do processo, você pode nos
+              ajudar nisso.
+            </p>
           </div>
         </div>
       </div>
-
     </div>
   </div>
 
@@ -339,30 +414,26 @@
 <!-- End Help Us ====
   ======================================= -->
 
-
 <!-- =====================================
   ==== Start Works -->
 
 <section class="works section-padding" data-scroll-index="2">
   <div class="container">
     <div class="row">
-
       <div class="section-head offset-md-2 col-md-8 offset-lg-3 col-lg-6">
         <h4><span></span>Galeria de Fotos</h4>
       </div>
-
     </div>
   </div>
 
   <div class="container-fluid">
     <div class="row">
-
       <!-- filter links -->
       <div class="filtering text-center mb-30 col-sm-12">
         <div class="filter">
-          <span data-filter='*' class="active">Todas Ações</span>
-          <span data-filter='.ensino'>Ensino</span>
-          <span data-filter='.producao'>Produção Face Shield</span>
+          <span data-filter="*" class="active">Todas Ações</span>
+          <span data-filter=".ensino">Ensino</span>
+          <span data-filter=".producao">Produção Face Shield</span>
         </div>
       </div>
 
@@ -370,16 +441,17 @@
 
       <!-- gallery -->
       <div class="gallery full-width">
-
         <div class="col-lg-3 col-md-6 items producao">
           <div class="item-img">
-            <img src="{{ IMG_DIR }}portfolio/1.jpg" alt="image">
+            <img src="{{ IMG_DIR }}portfolio/1.jpg" alt="image" />
             <div class="item-img-overlay">
               <div class="overlay-info full-width">
                 <p>Laboratório Aberto de Brasília</p>
                 <h6>Entrega de máscaras</h6>
                 <a href="{{ IMG_DIR }}portfolio/1.jpg" class="popimg">
-                  <span class="icon"><i class="fas fa-long-arrow-alt-right"></i></span>
+                  <span class="icon"
+                    ><i class="fas fa-long-arrow-alt-right"></i
+                  ></span>
                 </a>
               </div>
             </div>
@@ -388,13 +460,15 @@
 
         <div class="col-lg-3 col-md-6 items producao">
           <div class="item-img">
-            <img src="{{ IMG_DIR }}portfolio/2.jpg" alt="image">
+            <img src="{{ IMG_DIR }}portfolio/2.jpg" alt="image" />
             <div class="item-img-overlay">
               <div class="overlay-info full-width">
                 <p>Laboratório Aberto de Brasília</p>
                 <h6>Entrega de máscaras</h6>
                 <a href="{{ IMG_DIR }}portfolio/2.jpg" class="popimg">
-                  <span class="icon"><i class="fas fa-long-arrow-alt-right"></i></span>
+                  <span class="icon"
+                    ><i class="fas fa-long-arrow-alt-right"></i
+                  ></span>
                 </a>
               </div>
             </div>
@@ -403,13 +477,15 @@
 
         <div class="col-lg-3 col-md-6 items producao">
           <div class="item-img">
-            <img src="{{ IMG_DIR }}portfolio/3.jpg" alt="image">
+            <img src="{{ IMG_DIR }}portfolio/3.jpg" alt="image" />
             <div class="item-img-overlay">
               <div class="overlay-info full-width">
                 <p>Laboratório Aberto de Brasília</p>
                 <h6>Montagem de Face Shields</h6>
                 <a href="{{ IMG_DIR }}portfolio/3.jpg" class="popimg">
-                  <span class="icon"><i class="fas fa-long-arrow-alt-right"></i></span>
+                  <span class="icon"
+                    ><i class="fas fa-long-arrow-alt-right"></i
+                  ></span>
                 </a>
               </div>
             </div>
@@ -418,13 +494,15 @@
 
         <div class="col-lg-3 col-md-6 items producao">
           <div class="item-img">
-            <img src="{{ IMG_DIR }}portfolio/4.jpg" alt="image">
+            <img src="{{ IMG_DIR }}portfolio/4.jpg" alt="image" />
             <div class="item-img-overlay">
               <div class="overlay-info full-width">
                 <p>Laboratório Aberto de Brasília</p>
                 <h6>Material para montagem</h6>
                 <a href="{{ IMG_DIR }}portfolio/4.jpg" class="popimg">
-                  <span class="icon"><i class="fas fa-long-arrow-alt-right"></i></span>
+                  <span class="icon"
+                    ><i class="fas fa-long-arrow-alt-right"></i
+                  ></span>
                 </a>
               </div>
             </div>
@@ -433,13 +511,15 @@
 
         <div class="col-lg-3 col-md-6 items producao">
           <div class="item-img">
-            <img src="{{ IMG_DIR }}portfolio/5.jpg" alt="image">
+            <img src="{{ IMG_DIR }}portfolio/5.jpg" alt="image" />
             <div class="item-img-overlay">
               <div class="overlay-info full-width">
                 <p>Laboratório Aberto de Brasília</p>
                 <h6>Entrega de máscaras</h6>
                 <a href="{{ IMG_DIR }}portfolio/5.jpg" class="popimg">
-                  <span class="icon"><i class="fas fa-long-arrow-alt-right"></i></span>
+                  <span class="icon"
+                    ><i class="fas fa-long-arrow-alt-right"></i
+                  ></span>
                 </a>
               </div>
             </div>
@@ -448,13 +528,15 @@
 
         <div class="col-lg-3 col-md-6 items producao">
           <div class="item-img">
-            <img src="{{ IMG_DIR }}portfolio/6.jpg" alt="image">
+            <img src="{{ IMG_DIR }}portfolio/6.jpg" alt="image" />
             <div class="item-img-overlay">
               <div class="overlay-info full-width">
                 <p>Laboratório Aberto de Brasília</p>
                 <h6>Entrega com auxílio do Ministério da Defesa</h6>
                 <a href="{{ IMG_DIR }}portfolio/6.jpg" class="popimg">
-                  <span class="icon"><i class="fas fa-long-arrow-alt-right"></i></span>
+                  <span class="icon"
+                    ><i class="fas fa-long-arrow-alt-right"></i
+                  ></span>
                 </a>
               </div>
             </div>
@@ -463,13 +545,15 @@
 
         <div class="col-lg-3 col-md-6 items ensino">
           <div class="item-img">
-            <img src="{{ IMG_DIR }}portfolio/img-folder.svg" alt="image">
+            <img src="{{ IMG_DIR }}portfolio/img-folder.svg" alt="image" />
             <div class="item-img-overlay">
               <div class="overlay-info full-width">
                 <p>FT Ensina</p>
                 <h6>Curso de APC</h6>
                 <a href="{{ IMG_DIR }}portfolio/img-folder.svg" class="popimg">
-                  <span class="icon"><i class="fas fa-long-arrow-alt-right"></i></span>
+                  <span class="icon"
+                    ><i class="fas fa-long-arrow-alt-right"></i
+                  ></span>
                 </a>
               </div>
             </div>
@@ -478,21 +562,21 @@
 
         <div class="col-lg-3 col-md-6 items ensino">
           <div class="item-img">
-            <img src="{{ IMG_DIR }}portfolio/img-folder.svg" alt="image">
+            <img src="{{ IMG_DIR }}portfolio/img-folder.svg" alt="image" />
             <div class="item-img-overlay">
               <div class="overlay-info full-width">
                 <p>FT Ensina</p>
                 <h6>Curso de CPE</h6>
                 <a href="{{ IMG_DIR }}portfolio/img-folder.svg" class="popimg">
-                  <span class="icon"><i class="fas fa-long-arrow-alt-right"></i></span>
+                  <span class="icon"
+                    ><i class="fas fa-long-arrow-alt-right"></i
+                  ></span>
                 </a>
               </div>
             </div>
           </div>
         </div>
-
       </div>
-
     </div>
   </div>
 </section>
@@ -508,14 +592,16 @@
 <!-- End Midias ====
   ======================================= -->
 
-
 <!-- =====================================
   ==== Start Call-Action -->
 
-<section class="call-action section-padding bg-img bg-fixed" data-overlay-dark="5" data-background="{{ IMG_DIR }}unb.jpg">
+<section
+  class="call-action section-padding bg-img bg-fixed"
+  data-overlay-dark="5"
+  data-background="{{ IMG_DIR }}unb.jpg"
+>
   <div class="container">
     <div class="row">
-
       <div class="col-lg-12">
         <div class="text-center">
           <h2>Deseja colaborar conosco?</h2>
@@ -525,7 +611,6 @@
           </a>
         </div>
       </div>
-
     </div>
   </div>
 </section>
@@ -533,8 +618,7 @@
 <!-- End Call-Action ====
   ======================================= -->
 
-{% endblock %}
-{% block particles %}
+{% endblock %} {% block particles %}
 <!-- particles.min js -->
 <script src="static/js/particles.min.js"></script>
 <!-- app js -->
